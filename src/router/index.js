@@ -30,18 +30,8 @@ export const constantRoutes = [
     isHidden: false
   },
   {
-    path: '/test',
+    path: '/testVmodel',
     component: (resolve) => require(['@/views/test.vue'], resolve),
-    isHidden: false
-  },
-  {
-    path: '/testVmodelFather',
-    component: (resolve) => require(['@/views/testDate.vue'], resolve),
-    isHidden: false
-  },
-  {
-    path: '/Swiper',
-    component: (resolve) => require(['@/views/Swiper.vue'], resolve),
     isHidden: false
   },
   {
@@ -49,11 +39,6 @@ export const constantRoutes = [
     component: (resolve) => require(['@/views/testmce.vue'], resolve),
     isHidden: false
   },
-  {
-    path: '/button',
-    component: (resolve) => require(['@/views/testButton.vue'], resolve),
-    isHidden: false
-  }
 ];
 if(process.env.NODE_ENV === 'production') {
   constantRoutes.push({ path: '/', redirect: '/testVmodelFather' });
